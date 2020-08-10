@@ -1,15 +1,19 @@
 import React, { Component } from "react";
-import ReactTraining from "./functionall/react-training";
-import AngTraining from "./ang-training";
-
 class App extends Component {
   render() {
+/*    const mystyle = {
+      color: "white",
+      backgroundColor: "DodgerBlue",
+      padding: "10px",
+      fontFamily: "Arial",
+      display: "inline-block",
+      width: "250px",
+      textalign: "center"
+    };*/
     return (
       <div>
         <h4>React Training</h4>
         <p>Lets Check</p>
-        <ReactTraining name="ravi" />
-        <AngTraining />
       </div>
     );
   }
