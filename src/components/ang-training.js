@@ -4,7 +4,7 @@ class AngTraining extends Component {
   render() {
     return (
       <div>
-        <p>React training</p>
+       <p>React training</p>
         <p>{this.props.name}</p>
         <button>Test</button>
       </div>
