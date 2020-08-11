@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 //import './design.css';
 import styles from './mystyle.module.css';
-import Form from './form';
+import Form from './form'
+import Myform from './formWithUseState';
 
 class App extends Component {
   render() {
@@ -15,8 +16,11 @@ class App extends Component {
       textalign: "center"
     };*/
     return (
-      <div className={styles.bigblue}>
+/*      <div className={styles.bigblue}>
         <Form></Form>
+      </div>*/
+      <div className={styles.bigblue}>
+        <Myform></Myform>      
       </div>
     );
   }

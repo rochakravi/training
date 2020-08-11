@@ -7,25 +7,25 @@ class Form extends Component{
           }
         return (
             <div>
-            <form>
-                <h1 style={{backgroundcColor: "#330000"}}>Enter your details for React Training</h1>
-                <p>Name:</p>  
-                <input
-                    type="text"
-                />
-                <p>Experience:</p>
-                <input
-                    type="text"
-                />
-                <p>Contact No:</p> 
-                <input
-                    type="text"
-                />
-                <p>Email Id:</p>  
-                <input
-                    type="text"
-                />
-                <p><button onClick = {myfunction}>Submit</button></p>
+                <form>
+                    <h1 style={{backgroundcColor: "#330000"}}>Enter your details for React Training</h1>
+                    <p>Name:</p>  
+                    <input
+                        type="text"
+                    />
+                    <p>Experience:</p>
+                    <input
+                        type="text"
+                    />
+                    <p>Contact No:</p> 
+                    <input
+                        type="text"
+                    />
+                    <p>Email Id:</p>  
+                    <input
+                        type="text"
+                    />
+                    <p><button onClick = {myfunction}>Submit</button></p>
                 </form>
             </div>
         );
