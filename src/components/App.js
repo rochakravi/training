@@ -1,26 +1,17 @@
 import React, { Component } from "react";
+import UserRegistration from './UserRegistration'
 //import './design.css';
-import styles from './mystyle.module.css';
-import Form from './form'
-import Myform from './formWithUseState';
+// import styles from './mystyle.module.css';
+// import Form from './form'
+// import Myform from './formWithUseState';
 
 class App extends Component {
   render() {
-/*    const mystyle = {
-      color: "white",
-      backgroundColor: "DodgerBlue",
-      padding: "10px",
-      fontFamily: "Arial",
-      display: "inline-block",
-      width: "350px",
-      textalign: "center"
-    };*/
+
     return (
-/*      <div className={styles.bigblue}>
-        <Form></Form>
-      </div>*/
-      <div className={styles.bigblue}>
-        <Myform></Myform>      
+
+      <div>
+        <UserRegistration/>     
       </div>
     );
   }
