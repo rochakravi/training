@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(214, 248, 246);
+}
+h1 {
+    color: rgba(16, 19, 168, 0.911);
+    text-align: center;
+}
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button{
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border : none;
+  border-radius: 4px;
+  cursor: pointer;
+}

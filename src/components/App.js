@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 //import './design.css';
-import styles from './mystyle.module.css';
-import Form from './form'
-import Myform from './formWithUseState';
+//import styles from './mystyle.module.css';
+//import Form from './form'
+//import Myform from './formWithUseState';
+import PlayerForm from './playerRegistrationForm';
+import  './playerFormStyles.css';
 
 class App extends Component {
   render() {
@@ -18,9 +20,12 @@ class App extends Component {
     return (
 /*      <div className={styles.bigblue}>
         <Form></Form>
-      </div>*/
+      </div>
       <div className={styles.bigblue}>
         <Myform></Myform>      
+      </div>*/
+      <div>
+        <PlayerForm></PlayerForm>
       </div>
     );
   }
