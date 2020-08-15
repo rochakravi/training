@@ -1,41 +1,46 @@
 import React, { Component } from "react";
-//import './design.css';
-import styles from './mystyle.module.css';
-import Form from './form'
-import Myform from './formWithUseState';
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AngTraining from "./screens/ang-training";
+import ReactTraining from "./screens/react-training";
+import Card from "./ui-kit/card";
+import styles from "./design.module.css";
+import Footer from "./functional/footer";
 class App extends Component {
   render() {
-/*    const mystyle = {
-      color: "white",
-      backgroundColor: "DodgerBlue",
-      padding: "10px",
-      fontFamily: "Arial",
-      display: "inline-block",
-      width: "350px",
-      textalign: "center"
-    };*/
     return (
-/*      <div className={styles.bigblue}>
-        <Form></Form>
-      </div>*/
-      <div className={styles.bigblue}>
-        <Myform></Myform>      
-      </div>
+      <Router>
+        <div>
+          <div className={styles.navcontainer}>
+            <Link to="/react">
+              <Card title="React" content="lets check the contents" />
+            </Link>
+            <Link to="/angular">
+              <Card title="Angular" content="lets check the contents" />
+            </Link>
+            <Link to="">
+              <Card title="React Native" content="lets check the contents" />
+            </Link>
+            <Link to="">
+              <Card title="Spring Boot" content="lets check the contents" />
+            </Link>
+          </div>
+          <div className={styles.contentcontainer}>
+            <Switch>
+              <Route path="/react">
+                <ReactTraining />
+              </Route>
+              <Route path="/angular">
+                <AngTraining />
+              </Route>
+            </Switch>
+          </div>
+          <div className={styles.footer}>
+            <Footer />
+          </div>
+        </div>
+      </Router>
     );
   }
 }
 
 export default App;
-
-// 1. style
-
-// 2 . style with const
-
-// 4. className Style
-
-// 4. className with external css
-
-// 5. Styled-components =>
-
-//props

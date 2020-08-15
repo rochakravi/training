@@ -1,0 +1,22 @@
+.navcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contentcontainer {
+  box-shadow: 5px 5px -1px 9px #a2dda2;
+  margin: 0 0 150px 0;
+}
+a {
+  text-decoration: none;
+}
+.footer {
+  box-shadow: 5px 5px 20px 9px black;
+  padding: 18px 18px;
+
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: white;
+  margin-right: 9px;
+}
