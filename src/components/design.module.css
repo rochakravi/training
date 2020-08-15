@@ -1,7 +1,6 @@
 .navcontainer {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 2%;
 }
 .contentcontainer {
   box-shadow: 5px 5px -1px 9px #a2dda2;

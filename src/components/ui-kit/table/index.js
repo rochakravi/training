@@ -15,7 +15,7 @@ const Article = styled.article`
   font-size: 20px;
 `;
 const Flag = styled.span`
-  font-size: 20px;
+  font-size: 10px;
   color: #ff00eb;
 `;
 
@@ -37,7 +37,7 @@ const Table = (props) => {
             <Article key={ii.heading}>
               {ii.heading}
               {ii.type && (
-                <button>
+                <button style={{ position: "relative", left: "7%" }}>
                   <Flag>{ii.type}</Flag>
                 </button>
               )}
