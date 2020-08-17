@@ -12,7 +12,8 @@ const Title = styled.h1`
   font-size: 22px;
 `;
 const Article = styled.article`
-  font-size: 20px;
+  font-size: 18px;
+  color: blue;
 `;
 const Flag = styled.span`
   font-size: 10px;
@@ -29,7 +30,7 @@ const Table = (props) => {
   };
 
   return (
-    <List onClick={expand}>
+    <List onClick={expand} key={props.title}>
       <Title>{props.title}</Title>
       {props.contents.map((ii) => {
         return (
