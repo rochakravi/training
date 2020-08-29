@@ -5,6 +5,11 @@ import ReactTraining from "./screens/react-training";
 import Card from "./ui-kit/card";
 import styles from "./design.module.css";
 import Footer from "./functional/footer";
+import Form from "./form";
+
+import { ThemeContext, themes } from "./ui-kit/theme-context";
+import ThemedButton from "./ui-kit/themed-button";
+
 class App extends Component {
   render() {
     return (
@@ -20,7 +25,7 @@ class App extends Component {
             <Link to="">
               <Card title="React Native" content="lets check the contents" />
             </Link>
-            <Link to="">
+            <Link to="form">
               <Card title="Spring Boot" content="lets check the contents" />
             </Link>
           </div>
@@ -31,6 +36,9 @@ class App extends Component {
               </Route>
               <Route path="/angular">
                 <AngTraining />
+              </Route>
+              <Route path="/form">
+                <Form />
               </Route>
             </Switch>
           </div>

@@ -7,7 +7,7 @@ const title = styled.h1`
 `;
 
 const Title = (props) => {
-  return <title>abc</title>;
+  return <title>{props.title}</title>;
 };
 
 export default Title;
