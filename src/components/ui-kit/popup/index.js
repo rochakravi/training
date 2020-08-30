@@ -1,10 +1,7 @@
-.navcontainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-.contentcontainer {
-  /* box-shadow: 5px 5px -1px 9px #a2dda2;
-  margin: 0 0 150px 0; */
+import React from "react";
+import styled from "styled-components";
+
+const Model = styled.div`
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -16,25 +13,21 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-.modalContent {
+`;
+const Content = styled.div`
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-}
-a {
-  text-decoration: none;
-}
-.footer {
-  box-shadow: 5px 5px 20px 9px black;
-  padding: 18px 18px;
+`;
 
-  display: flex;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background: white;
-  margin-right: 9px;
-}
+const Popup = () => {
+  return (
+    <Model>
+      <Content></Content>
+    </Model>
+  );
+};
+
+export default Popup;

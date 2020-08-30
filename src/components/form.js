@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import Card from "./ui-kit/card";
+import Card from "./ui-kit/card";
 
 class Form extends Component {
   state = {
@@ -26,7 +26,7 @@ class Form extends Component {
         </h6>
 
         <button onClick={() => this.changeState()}>Change State</button>
-        {/* <Card></Card> */}
+        <Card badge={6}></Card>
         <form>
           <h1 style={{ backgroundcColor: "#330000" }}>
             Enter your details for React Training

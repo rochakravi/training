@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const Section = styled.section`
   background: #00d0ff36;
@@ -17,14 +17,23 @@ const Content = styled(Heading)`
   font-size: 28px;
 `;
 
-const Card = (props) => {
+const Card = ({ title, content, badge, toggleHandler }) => {
+  Card.defaultProps = {
+    title: "Card",
+  };
+
+  Card.propTypes = {
+    title: PropTypes.string.isRequired,
+    badge: PropTypes.number.isRequired,
+  };
+
   return (
-    <Section>
+    <Section onClick={toggleHandler}>
       <div>
-        <Heading>{props.title}</Heading>
+        <Heading>{title}</Heading>
       </div>
       <div>
-        <Content>{props.content}</Content>
+        <Content>{content}</Content>
       </div>
     </Section>
   );
