@@ -17,14 +17,13 @@ const Content = styled(Heading)`
   font-size: 28px;
 `;
 
-const Card = ({ title, content, badge, toggleHandler }) => {
+const Card = ({ title, content, toggleHandler }) => {
   Card.defaultProps = {
     title: "Card",
   };
 
   Card.propTypes = {
     title: PropTypes.string.isRequired,
-    badge: PropTypes.number.isRequired,
   };
 
   return (
