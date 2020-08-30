@@ -8,13 +8,8 @@ import Footer from "./functional/footer";
 import Form from "./form";
 import styled from "styled-components";
 
-import { ThemeContext, themes } from "./ui-kit/theme-context";
-import ThemedButton from "./ui-kit/themed-button";
-import Popup from "./ui-kit/popup";
-
 const Model = styled.div`
- {this.state.isClose ? display: block : display : none}
-  // display: block; /* Hidden by default */
+  display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 80px; /* Location of the box */
