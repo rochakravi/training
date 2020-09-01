@@ -6,7 +6,9 @@ import Card from "./ui-kit/card";
 import styles from "./design.module.css";
 import Footer from "./functional/footer";
 import Form from "./form";
+import BookForm from "./bookForm";
 import styled from "styled-components";
+import * as firebase from "firebase/app";
 
 const Model = styled.div`
   display: block; /* Hidden by default */
@@ -67,7 +69,7 @@ class App extends Component {
                 toggleHandler={this.toggle}
               />
             </Link>
-            <Link to="">
+            <Link to="book">
               <Card
                 title="React Native"
                 content="lets check the contents"
@@ -95,6 +97,9 @@ class App extends Component {
                   </Route>
                   <Route path="/form">
                     <Form />
+                  </Route>
+                  <Route path="/book">
+                    <BookForm />
                   </Route>
                 </Switch>
               </Content>
