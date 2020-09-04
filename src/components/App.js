@@ -5,10 +5,13 @@ import ReactTraining from "./screens/react-training";
 import Card from "./ui-kit/card";
 import styles from "./design.module.css";
 import Footer from "./functional/footer";
+import Header from "./functional/header";
 import Form from "./form";
 import BookForm from "./bookForm";
+import User from "./screens/user";
 import styled from "styled-components";
 import * as firebase from "firebase/app";
+import { auth, createUserProfileDocument } from "./../firebase/firebase.util";
 
 const Model = styled.div`
   display: block; /* Hidden by default */
@@ -44,9 +47,48 @@ const Close = styled.span`
 `;
 
 class App extends Component {
-  state = {
-    isClose: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      isClose: false,
+      currentUser: null,
+    };
+  }
+  // componentDidMount() {
+  //   auth.onAuthStateChanged((user) => {
+  //     this.setState({ currentUser: user });
+  //     console.log(user);
+  //   });
+  // }
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
+        userRef.onSnapshot((snapShot) => {
+          console.log(" => ", snapShot.data());
+          this.setState(
+            {
+              currentUser: {
+                id: snapShot.id,
+                ...snapShot.data(),
+              },
+            },
+            () => {
+              console.log("state => ", this.state);
+            }
+          );
+        });
+      }
+      this.setState({ currentUser: userAuth });
+    });
+  }
+
+  componentWillUnmount() {
+    alert("unmounting");
+    this.unsubscribeFromAuth();
+  }
   toggle = () => {
     this.setState({ isClose: !this.state.isClose });
   };
@@ -83,6 +125,13 @@ class App extends Component {
                 toggleHandler={this.toggle}
               />
             </Link>
+            <Link to="user">
+              <Card
+                title="User"
+                content="lets check the contents"
+                toggleHandler={this.toggle}
+              />
+            </Link>
           </div>
           {this.state.isClose ? (
             <Model>
@@ -100,6 +149,9 @@ class App extends Component {
                   </Route>
                   <Route path="/book">
                     <BookForm />
+                  </Route>
+                  <Route path="/user">
+                    <User user={this.state.currentUser} />
                   </Route>
                 </Switch>
               </Content>
