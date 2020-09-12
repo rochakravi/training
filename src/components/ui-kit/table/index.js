@@ -30,7 +30,7 @@ const Table = (props) => {
   };
 
   return (
-    <List onClick={expand} key={props.title}>
+    <List onClick={expand}>
       <Title>{props.title}</Title>
       {props.contents.map((ii) => {
         return (

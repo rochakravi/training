@@ -21,12 +21,6 @@ class Form extends Component {
 
     return (
       <div>
-        <h6>
-          state - <span>{this.state.name}</span>
-        </h6>
-
-        <button onClick={() => this.changeState()}>Change State</button>
-        <Card badge={6}></Card>
         <form>
           <h1 style={{ backgroundcColor: "#330000" }}>
             Enter your details for React Training

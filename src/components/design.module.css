@@ -30,11 +30,9 @@ a {
 .footer {
   box-shadow: 5px 5px 20px 9px black;
   padding: 18px 18px;
-
   display: flex;
   position: fixed;
-  bottom: 0px;
-  width: 100%;
+  bottom: 10px;
+  width: 96%;
   background: white;
-  margin-right: 9px;
 }
