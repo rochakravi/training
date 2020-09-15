@@ -1,7 +1,7 @@
 import React from "react";
 import Table from "../ui-kit/table";
 import * as Data from "../../services/data";
-const SpringBoot = (props) => {
+const JavaFullStack = (props) => {
   return (
     <>
       {Data.data.springboot.map((item) => {
@@ -17,4 +17,4 @@ const SpringBoot = (props) => {
   );
 };
 
-export default SpringBoot;
+export default JavaFullStack;

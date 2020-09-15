@@ -152,4 +152,220 @@ export const data = {
       ],
     },
   ],
+  springboot: [
+    {
+      heading: "Getting Started",
+      articles: [
+        { heading: "Spring boot and Spring Cloud preview" },
+        { heading: "Why Angular" },
+        { heading: "Angular Setup" },
+      ],
+    },
+    {
+      heading: "Intro to Web Services",
+      articles: [
+        { heading: "Intro to SOAP Web Services" },
+        { heading: "Intro to SOAP Web Services" },
+      ],
+    },
+    {
+      heading: "Restful web services with spring boot",
+      articles: [
+        { heading: "Spring tool suit set up" },
+        { heading: "Initializing a Restful services project with spring boot" },
+        { heading: "choosing Dependies " },
+        { heading: "Understanding of its functional" },
+        { heading: "Implementing GET Method for user Resource" },
+        { heading: "Implementing POST method to create user Resource" },
+        { heading: "Implementing DELETE method to delete a user" },
+        { heading: "Implementing HTTP status code and location" },
+        { heading: "Best Practices" },
+      ],
+    },
+    {
+      heading: "JPA",
+      articles: [
+        {
+          heading: "JPA dependecies",
+        },
+
+        {
+          heading: "configuring JPA with spring boot",
+        },
+        {
+          heading: "JPA Repository Interface",
+        },
+        {
+          heading: "JPA Repository methods",
+        },
+        {
+          heading: "Creating Entity",
+        },
+        {
+          heading: "Using JPA on Entity",
+        },
+        {
+          heading: "Object Relational/ Relation mapping ",
+        },
+      ],
+    },
+    {
+      heading: "Exception Handling",
+      articles: [
+        {
+          heading: "Implementing Exception Handling - 404 Resources not found",
+        },
+        {
+          heading: "Implementing Generic Exception Handling for all resources",
+        },
+        {
+          heading: "Implementing Exception Handling - 404 Resources not found",
+        },
+      ],
+    },
+    {
+      heading: "Validation, HATEOAS & Advance",
+      articles: [
+        {
+          heading: "Implementing Validation",
+        },
+        {
+          heading: "Implementing HATEOAS",
+        },
+        {
+          heading: "Advance Restful Service Features",
+        },
+        {
+          heading: "Internationalization for  Restful Service",
+        },
+        {
+          heading: "Context Negotiation",
+        },
+        {
+          heading: "Swagger",
+        },
+        {
+          heading: "Swagger with Annotations",
+        },
+        {
+          heading: "Monitoring APIs with Spring boot Actuator",
+        },
+        {
+          heading: "static Filtering",
+        },
+        {
+          heading: "Dynamic Filtering",
+        },
+        {
+          heading: "Versioning Restful Services",
+        },
+      ],
+    },
+    {
+      heading: "Spring Security",
+      articles: [
+        {
+          heading: "Basic Authentication with spring security",
+        },
+        {
+          heading: "Implementing Generic Exception Handling for all resources",
+        },
+        {
+          heading: "Implementing Exception Handling - 404 Resources not found",
+        },
+      ],
+    },
+
+    {
+      heading: "Spring Cloud",
+      articles: [
+        {
+          heading: "Microservices with Spring Cloud",
+        },
+        {
+          heading: "Advantages of Microservices Architecture",
+        },
+        {
+          heading: "Spring Cloud config server",
+        },
+        {
+          heading: "configuring Profiles",
+        },
+      ],
+    },
+    {
+      heading: "Git & BitBUcket",
+      articles: [
+        {
+          heading: "remote repository",
+        },
+        {
+          heading: "merging conflicts",
+        },
+        {
+          heading: "Misleneous",
+        },
+      ],
+    },
+    {
+      heading: "Usefull",
+      articles: [
+        {
+          heading: "Servlet filter",
+        },
+        {
+          heading: "Interceptor",
+        },
+        {
+          heading: "Rest Template",
+        },
+        {
+          heading: "Thymeleaf",
+        },
+        {
+          heading: "CORS",
+        },
+        {
+          heading: "Scheduling",
+        },
+        {
+          heading: "Acutator",
+        },
+        {
+          heading: "Web socket",
+        },
+        {
+          heading: "Rabbit MQ",
+        },
+      ],
+    },
+    {
+      heading: "Testing",
+      articles: [
+        {
+          heading: "testing",
+        },
+      ],
+    },
+    {
+      heading: "Authentication",
+      articles: [
+        {
+          heading: "JWT ",
+        },
+        {
+          heading: "OAuth2  with JWT ",
+        },
+        {
+          heading: "OTP Authentication",
+        },
+        {
+          heading: "OCTA",
+        },
+        {
+          heading: "Google OAuth2 Sign-In",
+        },
+      ],
+    },
+  ],
 };

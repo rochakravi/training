@@ -12,6 +12,8 @@ import User from "./screens/user";
 import styled from "styled-components";
 import * as firebase from "firebase/app";
 import { auth, createUserProfileDocument } from "./../firebase/firebase.util";
+import SpringBoot from "./screens/spring-boot";
+import JavaFullStack from "./screens/javaFullStack";
 
 const Model = styled.div`
   display: block; /* Hidden by default */
@@ -118,20 +120,27 @@ class App extends Component {
                 toggleHandler={this.toggle}
               />
             </Link>
-            <Link to="form">
+            <Link to="springboot">
               <Card
                 title="Spring Boot"
                 content="lets check the contents"
                 toggleHandler={this.toggle}
               />
             </Link>
-            <Link to="user">
+            <Link to="jFullStack">
+              <Card
+                title="Java Full Stack"
+                content="lets check the contents"
+                toggleHandler={this.toggle}
+              />
+            </Link>
+            {/* <Link to="Java Full Stack">
               <Card
                 title="User"
                 content="lets check the contents"
                 toggleHandler={this.toggle}
               />
-            </Link>
+            </Link> */}
           </div>
           {this.state.isClose ? (
             <Model>
@@ -144,6 +153,13 @@ class App extends Component {
                   <Route path="/angular">
                     <AngTraining />
                   </Route>
+                  <Route path="/springboot">
+                    <SpringBoot />
+                  </Route>
+                  <Route path="/jFullStack">
+                    <JavaFullStack />
+                  </Route>
+
                   <Route path="/form">
                     <Form />
                   </Route>
