@@ -14,6 +14,7 @@ import * as firebase from "firebase/app";
 import { auth, createUserProfileDocument } from "./../firebase/firebase.util";
 import SpringBoot from "./screens/spring-boot";
 import JavaFullStack from "./screens/javaFullStack";
+import Java from "./screens/java";
 
 const Model = styled.div`
   display: block; /* Hidden by default */
@@ -120,6 +121,13 @@ class App extends Component {
                 toggleHandler={this.toggle}
               />
             </Link>
+            <Link to="java">
+              <Card
+                title="Java"
+                content="lets check the contents"
+                toggleHandler={this.toggle}
+              />
+            </Link>
             <Link to="springboot">
               <Card
                 title="Spring Boot"
@@ -152,6 +160,9 @@ class App extends Component {
                   </Route>
                   <Route path="/angular">
                     <AngTraining />
+                  </Route>
+                  <Route path="/java">
+                    <Java />
                   </Route>
                   <Route path="/springboot">
                     <SpringBoot />

@@ -367,5 +367,149 @@ export const data = {
         },
       ],
     },
+    {
+      heading: "Hibernate Tutorial",
+      articles: [
+        {
+          heading: "Hibernate Architecture ",
+        },
+        {
+          heading: "Hibernate Annotations",
+        },
+        {
+          heading: "Hibernate – Get/Fetch",
+        },
+        {
+          heading: "Hibernate – Persist",
+        },
+        {
+          heading: "Hibernate – Persistence LifeCycle",
+        },
+        {
+          heading: "Hibernate – SessionFactory",
+        },
+        {
+          heading: "Hibernate – Cascade Types",
+        },
+        {
+          heading: "Hibernate – Lazy Loading",
+        },
+        {
+          heading: "Hibernate – Criteria Queries",
+        },
+        {
+          heading: "Hibernate – HQL",
+        },
+        {
+          heading: "Hibernate – Query  Language",
+        },
+        {
+          heading: "Hibernate – Named Query",
+        },
+
+        {
+          heading: "Hibernate – Mappings",
+        },
+        {
+          heading: "Hibernate – Cache",
+        },
+        {
+          heading: "Cache Configuration",
+        },
+        {
+          heading: "Hibernate – In memory Database",
+        },
+        {
+          heading: "Hibernate – Bean Validation",
+        },
+        {
+          heading: "Hibernate – Validator CDI",
+        },
+        {
+          heading: "UnexpectedTypeException",
+        },
+      ],
+    },
+    {
+      heading: "Hibernate Annotations",
+      articles: [
+        {
+          heading: "Hibernate – JPA 2 Annotations",
+        },
+        {
+          heading: "Annotations Vs Mappings",
+        },
+        {
+          heading: "Hibernate – @Immutable",
+        },
+        {
+          heading: "Hibernate – @NaturalId",
+        },
+        {
+          heading: "Hibernate – @OneToMany",
+        },
+        {
+          heading: "Hibernate – @ManyToMany",
+        },
+        {
+          heading: "Hibernate – @OneToOne",
+        },
+      ],
+    },
+  ],
+  jFullStack: [
+    {
+      heading: "Core Java",
+      articles: [{ heading: "Refer Java Titles" }],
+    },
+    {
+      heading: "Spring boot",
+      articles: [{ heading: "Refer Spring boot tiles Titles" }],
+    },
+    {
+      heading: "Hibernate",
+      articles: [{ heading: "Refer Spring boot Titles" }],
+    },
+    {
+      heading: "JPA",
+      articles: [{ heading: "Refer Spring boot tiles" }],
+    },
+    {
+      heading: "Database",
+      articles: [
+        { heading: "MySQL" },
+        { heading: "Oracle" },
+        { heading: "MongoDB." },
+        { heading: "Postgres" },
+        { heading: "Any other" },
+      ],
+    },
+    {
+      heading: "Cloud",
+      articles: [
+        { heading: "AWS" },
+        { heading: "Azure" },
+        { heading: "Firebase." },
+        { heading: "Pivotal Cloud Foundry" },
+        { heading: "Heroku" },
+      ],
+    },
+    {
+      heading: "Misleneous",
+      articles: [
+        { heading: "JDBC" },
+        { heading: "JSP" },
+        { heading: "Servlet." },
+        { heading: "Serverless" },
+      ],
+    },
+    {
+      heading: "Front end",
+      articles: [
+        { heading: "React Complete Course" },
+        { heading: "React Native Complete Course" },
+        { heading: "Angular Complete Course" },
+      ],
+    },
   ],
 };
