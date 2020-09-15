@@ -99,6 +99,7 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <Header />
           <div className={styles.navcontainer}>
             <Link to="/react" onClick={this.toggle}>
               <Card
@@ -184,7 +185,6 @@ class App extends Component {
               </Content>
             </Model>
           ) : null}
-
           <div className={styles.footer}>
             <Footer />
           </div>
