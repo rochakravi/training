@@ -593,7 +593,7 @@ export const data = {
       ],
     },
     {
-      heading: "Multiple inheritance",
+      heading: "inheritance",
       articles: [{ heading: "Introduction" }],
     },
     {

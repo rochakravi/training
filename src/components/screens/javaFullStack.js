@@ -4,7 +4,7 @@ import * as Data from "../../services/data";
 const JavaFullStack = (props) => {
   return (
     <>
-      {Data.data.springboot.map((item) => {
+      {Data.data.jFullStack.map((item) => {
         return (
           <Table
             key={item.heading}

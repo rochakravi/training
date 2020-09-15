@@ -4,8 +4,8 @@ import * as styles from "../../components/design.module.css";
 const Header = (props) => {
   return (
     <div className={styles.header}>
-      <Link to="user">
-        <span className={styles.link}>SignIn</span>
+      <Link to="home">
+        <span className={styles.link}>Home</span>
       </Link>
     </div>
   );

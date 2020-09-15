@@ -4,6 +4,7 @@ body {
 .navcontainer {
   display: flex;
   flex-wrap: wrap;
+  padding: 100px 0;
 }
 .contentcontainer {
   /* box-shadow: 5px 5px -1px 9px #a2dda2;
@@ -46,6 +47,10 @@ a {
 .header {
   padding: 20px 10px;
   background-color: #12d9e8;
+  box-shadow: 1px 2px 9px 5px #226c106e;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
 .header-link {
   color: white;
