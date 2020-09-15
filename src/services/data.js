@@ -152,4 +152,478 @@ export const data = {
       ],
     },
   ],
+  springboot: [
+    {
+      heading: "Getting Started",
+      articles: [
+        { heading: "Spring boot and Spring Cloud preview" },
+        { heading: "Why Angular" },
+        { heading: "Angular Setup" },
+      ],
+    },
+    {
+      heading: "Intro to Web Services",
+      articles: [
+        { heading: "Intro to SOAP Web Services" },
+        { heading: "Intro to SOAP Web Services" },
+      ],
+    },
+    {
+      heading: "Restful web services with spring boot",
+      articles: [
+        { heading: "Spring tool suit set up" },
+        { heading: "Initializing a Restful services project with spring boot" },
+        { heading: "choosing Dependies " },
+        { heading: "Understanding of its functional" },
+        { heading: "Implementing GET Method for user Resource" },
+        { heading: "Implementing POST method to create user Resource" },
+        { heading: "Implementing DELETE method to delete a user" },
+        { heading: "Implementing HTTP status code and location" },
+        { heading: "Best Practices" },
+      ],
+    },
+    {
+      heading: "JPA",
+      articles: [
+        {
+          heading: "JPA dependecies",
+        },
+
+        {
+          heading: "configuring JPA with spring boot",
+        },
+        {
+          heading: "JPA Repository Interface",
+        },
+        {
+          heading: "JPA Repository methods",
+        },
+        {
+          heading: "Creating Entity",
+        },
+        {
+          heading: "Using JPA on Entity",
+        },
+        {
+          heading: "Object Relational/ Relation mapping ",
+        },
+      ],
+    },
+    {
+      heading: "Exception Handling",
+      articles: [
+        {
+          heading: "Implementing Exception Handling - 404 Resources not found",
+        },
+        {
+          heading: "Implementing Generic Exception Handling for all resources",
+        },
+        {
+          heading: "Implementing Exception Handling - 404 Resources not found",
+        },
+      ],
+    },
+    {
+      heading: "Validation, HATEOAS & Advance",
+      articles: [
+        {
+          heading: "Implementing Validation",
+        },
+        {
+          heading: "Implementing HATEOAS",
+        },
+        {
+          heading: "Advance Restful Service Features",
+        },
+        {
+          heading: "Internationalization for  Restful Service",
+        },
+        {
+          heading: "Context Negotiation",
+        },
+        {
+          heading: "Swagger",
+        },
+        {
+          heading: "Swagger with Annotations",
+        },
+        {
+          heading: "Monitoring APIs with Spring boot Actuator",
+        },
+        {
+          heading: "static Filtering",
+        },
+        {
+          heading: "Dynamic Filtering",
+        },
+        {
+          heading: "Versioning Restful Services",
+        },
+      ],
+    },
+    {
+      heading: "Spring Security",
+      articles: [
+        {
+          heading: "Basic Authentication with spring security",
+        },
+        {
+          heading: "Implementing Generic Exception Handling for all resources",
+        },
+        {
+          heading: "Implementing Exception Handling - 404 Resources not found",
+        },
+      ],
+    },
+
+    {
+      heading: "Spring Cloud",
+      articles: [
+        {
+          heading: "Microservices with Spring Cloud",
+        },
+        {
+          heading: "Advantages of Microservices Architecture",
+        },
+        {
+          heading: "Spring Cloud config server",
+        },
+        {
+          heading: "configuring Profiles",
+        },
+      ],
+    },
+    {
+      heading: "Git & BitBUcket",
+      articles: [
+        {
+          heading: "remote repository",
+        },
+        {
+          heading: "merging conflicts",
+        },
+        {
+          heading: "Misleneous",
+        },
+      ],
+    },
+    {
+      heading: "Usefull",
+      articles: [
+        {
+          heading: "Servlet filter",
+        },
+        {
+          heading: "Interceptor",
+        },
+        {
+          heading: "Rest Template",
+        },
+        {
+          heading: "Thymeleaf",
+        },
+        {
+          heading: "CORS",
+        },
+        {
+          heading: "Scheduling",
+        },
+        {
+          heading: "Acutator",
+        },
+        {
+          heading: "Web socket",
+        },
+        {
+          heading: "Rabbit MQ",
+        },
+      ],
+    },
+    {
+      heading: "Testing",
+      articles: [
+        {
+          heading: "testing",
+        },
+      ],
+    },
+    {
+      heading: "Authentication",
+      articles: [
+        {
+          heading: "JWT ",
+        },
+        {
+          heading: "OAuth2  with JWT ",
+        },
+        {
+          heading: "OTP Authentication",
+        },
+        {
+          heading: "OCTA",
+        },
+        {
+          heading: "Google OAuth2 Sign-In",
+        },
+      ],
+    },
+    {
+      heading: "Hibernate Tutorial",
+      articles: [
+        {
+          heading: "Hibernate Architecture ",
+        },
+        {
+          heading: "Hibernate Annotations",
+        },
+        {
+          heading: "Hibernate – Get/Fetch",
+        },
+        {
+          heading: "Hibernate – Persist",
+        },
+        {
+          heading: "Hibernate – Persistence LifeCycle",
+        },
+        {
+          heading: "Hibernate – SessionFactory",
+        },
+        {
+          heading: "Hibernate – Cascade Types",
+        },
+        {
+          heading: "Hibernate – Lazy Loading",
+        },
+        {
+          heading: "Hibernate – Criteria Queries",
+        },
+        {
+          heading: "Hibernate – HQL",
+        },
+        {
+          heading: "Hibernate – Query  Language",
+        },
+        {
+          heading: "Hibernate – Named Query",
+        },
+
+        {
+          heading: "Hibernate – Mappings",
+        },
+        {
+          heading: "Hibernate – Cache",
+        },
+        {
+          heading: "Cache Configuration",
+        },
+        {
+          heading: "Hibernate – In memory Database",
+        },
+        {
+          heading: "Hibernate – Bean Validation",
+        },
+        {
+          heading: "Hibernate – Validator CDI",
+        },
+        {
+          heading: "UnexpectedTypeException",
+        },
+      ],
+    },
+    {
+      heading: "Hibernate Annotations",
+      articles: [
+        {
+          heading: "Hibernate – JPA 2 Annotations",
+        },
+        {
+          heading: "Annotations Vs Mappings",
+        },
+        {
+          heading: "Hibernate – @Immutable",
+        },
+        {
+          heading: "Hibernate – @NaturalId",
+        },
+        {
+          heading: "Hibernate – @OneToMany",
+        },
+        {
+          heading: "Hibernate – @ManyToMany",
+        },
+        {
+          heading: "Hibernate – @OneToOne",
+        },
+      ],
+    },
+  ],
+  jFullStack: [
+    {
+      heading: "Core Java",
+      articles: [{ heading: "Refer Java Titles" }],
+    },
+    {
+      heading: "Spring boot",
+      articles: [{ heading: "Refer Spring boot tiles Titles" }],
+    },
+    {
+      heading: "Hibernate",
+      articles: [{ heading: "Refer Spring boot Titles" }],
+    },
+    {
+      heading: "JPA",
+      articles: [{ heading: "Refer Spring boot tiles" }],
+    },
+    {
+      heading: "Database",
+      articles: [
+        { heading: "MySQL" },
+        { heading: "Oracle" },
+        { heading: "MongoDB." },
+        { heading: "Postgres" },
+        { heading: "Any other" },
+      ],
+    },
+    {
+      heading: "Cloud",
+      articles: [
+        { heading: "AWS" },
+        { heading: "Azure" },
+        { heading: "Firebase." },
+        { heading: "Pivotal Cloud Foundry" },
+        { heading: "Heroku" },
+      ],
+    },
+    {
+      heading: "Misleneous",
+      articles: [
+        { heading: "JDBC" },
+        { heading: "JSP" },
+        { heading: "Servlet." },
+        { heading: "Serverless" },
+      ],
+    },
+    {
+      heading: "Front end",
+      articles: [
+        { heading: "React Complete Course" },
+        { heading: "React Native Complete Course" },
+        { heading: "Angular Complete Course" },
+      ],
+    },
+  ],
+
+  java: [
+    {
+      heading: "Getting Started",
+      articles: [
+        { heading: "env setup" },
+        { heading: "variable" },
+        { heading: "data type" },
+        { heading: "declearation  of variable" },
+        { heading: "Giving values  to variable" },
+        { heading: "Symbolic constants" },
+        { heading: "Type casting" },
+        { heading: "Standard default values" },
+      ],
+    },
+    {
+      heading: "Operator and Expression",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Evaluation of Expressions" },
+        { heading: "type conversions in expressions" },
+      ],
+    },
+    {
+      heading: "Decision making and Branching",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Simple if statement" },
+        { heading: "The if  Else statement" },
+        { heading: "Nesting of if  Else statement" },
+        { heading: "the switch statement" },
+      ],
+    },
+    {
+      heading: "Decision making and looping",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "while statement" },
+        { heading: "do statement" },
+        { heading: "for statement" },
+        { heading: "Labeled Loop" },
+      ],
+    },
+    {
+      heading: "Class ,object ,and method",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Defining a class" },
+        { heading: "method declaration" },
+        { heading: "Creating Object" },
+        { heading: "constructor" },
+        { heading: "Method overloading" },
+      ],
+    },
+    {
+      heading: "java oops ",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "java inheritance" },
+        { heading: "overriding" },
+        { heading: "polymorphism" },
+        { heading: "abstraction" },
+        { heading: "Encapsulation" },
+        { heading: "intrface" },
+        { heading: "package" },
+      ],
+    },
+    {
+      heading: "Arrays ,String , and vector",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "One dimensional array" },
+        { heading: "creating a array" },
+        { heading: "Two diemensional array" },
+        { heading: " String" },
+        { heading: " Vector" },
+        { heading: " Wrapper Class " },
+        { heading: " Annotations " },
+      ],
+    },
+    {
+      heading: "inheritance",
+      articles: [{ heading: "Introduction" }],
+    },
+    {
+      heading: "Multithreaded programming",
+      articles: [{ heading: "Introduction" }],
+    },
+    {
+      heading: "java collection",
+      articles: [{ heading: "Introduction" }],
+    },
+    {
+      heading: "java 8",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Lamda Expression" },
+        { heading: "Strim Api" },
+        { heading: "Strim filter" },
+        { heading: "Base64 Encode Decode" },
+        { heading: "Default method" },
+        { heading: "for each method" },
+        { heading: "Collection" },
+        { heading: "StringJoiner class" },
+        { heading: "Optional class" },
+        { heading: "java script nashon" },
+        { heading: "Prallel Array Sort" },
+        { heading: "type inheritance" },
+        { heading: "Prameter reflection" },
+        { heading: "type Annotations" },
+        { heading: "Jdbc Improvement" },
+      ],
+    },
+  ],
 };
