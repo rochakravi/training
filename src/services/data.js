@@ -368,4 +368,92 @@ export const data = {
       ],
     },
   ],
+
+  java: [
+    {
+      heading: "Getting Started",
+      articles: [
+        { heading: "env setup" },
+        { heading: "variable" },
+        { heading: "data type" },
+        { heading: "declearation  of variable" },
+        { heading: "Giving values  to variable" },
+        { heading: "Symbolic constants" },
+        { heading: "Type casting" },
+        { heading: "Standard default values" },
+      ],
+    },
+    {
+      heading: "Operator and Expression",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Evaluation of Expressions" },
+        { heading: "type conversions in expressions" },
+      ],
+    },
+    {
+      heading: "Decision making and Branching",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Simple if statement" },
+        { heading: "The if  Else statement" },
+        { heading: "Nesting of if  Else statement" },
+        { heading: "the switch statement" },
+      ],
+    },
+    {
+      heading: "Decision making and looping",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "while statement" },
+        { heading: "do statement" },
+        { heading: "for statement" },
+        { heading: "Labeled Loop" },
+      ],
+    },
+    {
+      heading: "Class ,object ,and method",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Defining a class" },
+        { heading: "method declaration" },
+        { heading: "Creating Object" },
+        { heading: "constructor" },
+        { heading: "Method overloading" },
+      ],
+    },
+    {
+      heading: "java oops ",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "java inheritance" },
+        { heading: "overriding" },
+        { heading: "polymorphism" },
+        { heading: "abstraction" },
+        { heading: "Encapsulation" },
+        { heading: "intrface" },
+        { heading: "package" },
+      ],
+    },
+    {
+      heading: "Arrays ,String , and vector",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "One dimensional array" },
+        { heading: "creating a array" },
+        { heading: "T" },
+        { heading: "the switch statement" },
+      ],
+    },
+    {
+      heading: "Decision making and Branching",
+      articles: [
+        { heading: "Introduction" },
+        { heading: "Simple if statement" },
+        { heading: "The if  Else statement" },
+        { heading: "Nesting of if  Else statement" },
+        { heading: "the switch statement" },
+      ],
+    },
+  ],
 };
