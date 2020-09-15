@@ -5,8 +5,16 @@ import ReactTraining from "./screens/react-training";
 import Card from "./ui-kit/card";
 import styles from "./design.module.css";
 import Footer from "./functional/footer";
+import Header from "./functional/header";
 import Form from "./form";
+import BookForm from "./bookForm";
+import User from "./screens/user";
 import styled from "styled-components";
+import * as firebase from "firebase/app";
+import { auth, createUserProfileDocument } from "./../firebase/firebase.util";
+import SpringBoot from "./screens/spring-boot";
+import JavaFullStack from "./screens/javaFullStack";
+import Java from "./screens/java";
 
 const Model = styled.div`
   display: block; /* Hidden by default */
@@ -42,9 +50,48 @@ const Close = styled.span`
 `;
 
 class App extends Component {
-  state = {
-    isClose: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      isClose: false,
+      currentUser: null,
+    };
+  }
+  // componentDidMount() {
+  //   auth.onAuthStateChanged((user) => {
+  //     this.setState({ currentUser: user });
+  //     console.log(user);
+  //   });
+  // }
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
+        userRef.onSnapshot((snapShot) => {
+          console.log(" => ", snapShot.data());
+          this.setState(
+            {
+              currentUser: {
+                id: snapShot.id,
+                ...snapShot.data(),
+              },
+            },
+            () => {
+              console.log("state => ", this.state);
+            }
+          );
+        });
+      }
+      this.setState({ currentUser: userAuth });
+    });
+  }
+
+  componentWillUnmount() {
+    alert("unmounting");
+    this.unsubscribeFromAuth();
+  }
   toggle = () => {
     this.setState({ isClose: !this.state.isClose });
   };
@@ -52,6 +99,7 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <Header />
           <div className={styles.navcontainer}>
             <Link to="/react" onClick={this.toggle}>
               <Card
@@ -67,20 +115,41 @@ class App extends Component {
                 toggleHandler={this.toggle}
               />
             </Link>
-            <Link to="">
+            <Link to="book">
               <Card
                 title="React Native"
                 content="lets check the contents"
                 toggleHandler={this.toggle}
               />
             </Link>
-            <Link to="form">
+            <Link to="java">
+              <Card
+                title="Java"
+                content="lets check the contents"
+                toggleHandler={this.toggle}
+              />
+            </Link>
+            <Link to="springboot">
               <Card
                 title="Spring Boot"
                 content="lets check the contents"
                 toggleHandler={this.toggle}
               />
             </Link>
+            <Link to="jFullStack">
+              <Card
+                title="Java Full Stack"
+                content="lets check the contents"
+                toggleHandler={this.toggle}
+              />
+            </Link>
+            {/* <Link to="Java Full Stack">
+              <Card
+                title="User"
+                content="lets check the contents"
+                toggleHandler={this.toggle}
+              />
+            </Link> */}
           </div>
           {this.state.isClose ? (
             <Model>
@@ -93,14 +162,29 @@ class App extends Component {
                   <Route path="/angular">
                     <AngTraining />
                   </Route>
+                  <Route path="/java">
+                    <Java />
+                  </Route>
+                  <Route path="/springboot">
+                    <SpringBoot />
+                  </Route>
+                  <Route path="/jFullStack">
+                    <JavaFullStack />
+                  </Route>
+
                   <Route path="/form">
                     <Form />
+                  </Route>
+                  <Route path="/book">
+                    <BookForm />
+                  </Route>
+                  <Route path="/user">
+                    <User user={this.state.currentUser} />
                   </Route>
                 </Switch>
               </Content>
             </Model>
           ) : null}
-
           <div className={styles.footer}>
             <Footer />
           </div>
