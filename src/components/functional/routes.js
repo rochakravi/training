@@ -9,10 +9,17 @@ import SpringBoot from "./../screens/spring-boot";
 import JavaFullStack from "./../screens/javaFullStack";
 import Java from "./../screens/java";
 import Trainee from "./../trainee/Trainee";
+import Home from "./../screens/home";
 
 const Routes = (props) => {
   return (
     <Switch>
+      <Route path="/home">
+        <Home />
+      </Route>
+      <Route path="/trainee">
+        <Trainee />
+      </Route>
       <Route path="/react">
         <ReactTraining />
       </Route>
@@ -27,10 +34,6 @@ const Routes = (props) => {
       </Route>
       <Route path="/full-stack">
         <JavaFullStack />
-      </Route>
-
-      <Route path="/trainee">
-        <Trainee />
       </Route>
     </Switch>
   );

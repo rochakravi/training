@@ -94,7 +94,7 @@ class App extends Component {
       <Router>
         <Header />
         <Routes />
-        <Footer />
+        {/* <Footer /> */}
         {/* <Switch>
           <Route path="/react">
             <ReactTraining />
