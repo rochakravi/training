@@ -1,20 +1,14 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import AngTraining from "./screens/ang-training";
-import ReactTraining from "./screens/react-training";
-import Card from "./ui-kit/card";
-import styles from "./design.module.css";
-import Footer from "./functional/footer";
+
 import Header from "./functional/header";
-import Form from "./form";
-import BookForm from "./bookForm";
-import User from "./screens/user";
+import Footer from "./functional/footer";
+
 import styled from "styled-components";
 import * as firebase from "firebase/app";
 import { auth, createUserProfileDocument } from "./../firebase/firebase.util";
-import SpringBoot from "./screens/spring-boot";
-import JavaFullStack from "./screens/javaFullStack";
-import Java from "./screens/java";
+
+import Routes from "./functional/routes";
 
 const Model = styled.div`
   display: block; /* Hidden by default */
@@ -98,7 +92,40 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <Header />
+        <Routes />
+        <Footer />
+        {/* <Switch>
+          <Route path="/react">
+            <ReactTraining />
+          </Route>
+          <Route path="/angular">
+            <AngTraining />
+          </Route>
+          <Route path="/java">
+            <Java />
+          </Route>
+          <Route path="/springboot">
+            <SpringBoot />
+          </Route>
+          <Route path="/jFullStack">
+            <JavaFullStack />
+          </Route>
+
+          <Route path="/form">
+            <Form />
+          </Route>
+          <Route path="/book">
+            <BookForm />
+          </Route>
+          <Route path="/user">
+            <User user={this.state.currentUser} />
+          </Route>
+          <Route path="/trainee">
+            <Trainee />
+          </Route>
+        </Switch> */}
+        {/* <div>
           <Header />
           <div className={styles.navcontainer}>
             <Link to="/react" onClick={this.toggle}>
@@ -149,7 +176,7 @@ class App extends Component {
                 content="lets check the contents"
                 toggleHandler={this.toggle}
               />
-            </Link> */}
+            </Link> 
           </div>
           {this.state.isClose ? (
             <Model>
@@ -181,6 +208,9 @@ class App extends Component {
                   <Route path="/user">
                     <User user={this.state.currentUser} />
                   </Route>
+                  <Route path="/trainee">
+                    <Trainee />
+                  </Route>
                 </Switch>
               </Content>
             </Model>
@@ -188,7 +218,7 @@ class App extends Component {
           <div className={styles.footer}>
             <Footer />
           </div>
-        </div>
+        </div> */}
       </Router>
     );
   }

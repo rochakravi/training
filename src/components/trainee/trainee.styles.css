@@ -1,0 +1,14 @@
+.traineeList {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+}
+
+.name {
+  color: blue;
+  display: block;
+  margin-right: 2%;
+}
+.test {
+  display: flex;
+}

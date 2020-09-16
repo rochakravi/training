@@ -1,0 +1,70 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.traineeList {
+  display: flex;
+  justify-content: space-evenly;
+  float: left;
+  width: 100%;
+}
+
+.name {
+  display: block;
+  color: black;
+  font-weight: 600;
+}
+.tName {
+  font-weight: 600;
+}
+.test {
+  display: flex;
+}
+.worth {
+  color: #377904;
+  font-weight: 600;
+}
+.received {
+  color: #2e0ee0;
+  font-weight: 600;
+}
+.balance {
+  color: red;
+  font-weight: 600;
+}
+.location {
+  color: #2e0ee0;
+}
+.button {
+  padding: 10px 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #91ff00a6;
+  border: none;
+}
+.add {
+  color: white;
+  background-color: red;
+}
+.dec {
+  color: white;
+  background-color: #272b27;
+}
+
+.cls {
+  font-weight: 600;
+  color: #1815d6;
+}
