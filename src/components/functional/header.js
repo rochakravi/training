@@ -7,6 +7,9 @@ const Header = (props) => {
       <Link to="home">
         <span className={styles.link}>Home</span>
       </Link>
+      <Link to="quote">
+        <span className={styles.link}>Quotation</span>
+      </Link>
     </div>
   );
 };

@@ -15,6 +15,7 @@ import { auth, createUserProfileDocument } from "./../firebase/firebase.util";
 import SpringBoot from "./screens/spring-boot";
 import JavaFullStack from "./screens/javaFullStack";
 import Java from "./screens/java";
+import QuotationForm from "./functional/quotationForm";
 
 const Model = styled.div`
   display: block; /* Hidden by default */
@@ -180,6 +181,9 @@ class App extends Component {
                   </Route>
                   <Route path="/user">
                     <User user={this.state.currentUser} />
+                  </Route>
+                  <Route path="/quote">
+                    <QuotationForm />
                   </Route>
                 </Switch>
               </Content>
