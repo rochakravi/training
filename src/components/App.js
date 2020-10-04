@@ -144,6 +144,13 @@ class App extends Component {
                 toggleHandler={this.toggle}
               />
             </Link>
+            <Link to="quote">
+              <Card
+                title="Java Full Stack"
+                content="lets check the contents"
+                toggleHandler={this.toggle}
+              />
+            </Link>
             {/* <Link to="Java Full Stack">
               <Card
                 title="User"
