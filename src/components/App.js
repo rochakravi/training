@@ -99,107 +99,38 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Header />
-          <div className={styles.navcontainer}>
-            <Link to="/react" onClick={this.toggle}>
-              <Card
-                title="React"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link>
-            <Link to="/angular">
-              <Card
-                title="Angular"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link>
-            <Link to="book">
-              <Card
-                title="React Native"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link>
-            <Link to="java">
-              <Card
-                title="Java"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link>
-            <Link to="springboot">
-              <Card
-                title="Spring Boot"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link>
-            <Link to="jFullStack">
-              <Card
-                title="Java Full Stack"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link>
-            <Link to="quote">
-              <Card
-                title="Java Full Stack"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link>
-            {/* <Link to="Java Full Stack">
-              <Card
-                title="User"
-                content="lets check the contents"
-                toggleHandler={this.toggle}
-              />
-            </Link> */}
-          </div>
-          {this.state.isClose ? (
-            <Model>
-              <Content>
-                <Close onClick={this.toggle}>X</Close>
-                <Switch>
-                  <Route path="/react">
-                    <ReactTraining />
-                  </Route>
-                  <Route path="/angular">
-                    <AngTraining />
-                  </Route>
-                  <Route path="/java">
-                    <Java />
-                  </Route>
-                  <Route path="/springboot">
-                    <SpringBoot />
-                  </Route>
-                  <Route path="/jFullStack">
-                    <JavaFullStack />
-                  </Route>
+        <Header />
 
-                  <Route path="/form">
-                    <Form />
-                  </Route>
-                  <Route path="/book">
-                    <BookForm />
-                  </Route>
-                  <Route path="/user">
-                    <User user={this.state.currentUser} />
-                  </Route>
-                  <Route path="/quote">
-                    <QuotationForm />
-                  </Route>
-                </Switch>
-              </Content>
-            </Model>
-          ) : null}
-          <div className={styles.footer}>
-            <Footer />
-          </div>
-        </div>
+        <Switch>
+          <Route path="/react">
+            <ReactTraining />
+          </Route>
+          <Route path="/angular">
+            <AngTraining />
+          </Route>
+          <Route path="/java">
+            <Java />
+          </Route>
+          <Route path="/springboot">
+            <SpringBoot />
+          </Route>
+          <Route path="/jFullStack">
+            <JavaFullStack />
+          </Route>
+
+          <Route path="/form">
+            <Form />
+          </Route>
+          <Route path="/book">
+            <BookForm />
+          </Route>
+          <Route path="/user">
+            <User user={this.state.currentUser} />
+          </Route>
+          <Route path="/quote">
+            <QuotationForm />
+          </Route>
+        </Switch>
       </Router>
     );
   }
