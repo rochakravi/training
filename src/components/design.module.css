@@ -49,9 +49,8 @@ a {
   background-color: #12d9e8;
   box-shadow: 1px 2px 9px 5px #226c106e;
   z-index: 100;
-
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
 }
 .header-link {

@@ -9,13 +9,14 @@ const Header = (props) => {
       <Link to="home">
         <span className={styles.link}>Native Villagers</span>
       </Link>
-      <Link to="/react">Java Script</Link>
-      <Link to="/react">Angular</Link>
+      <Link to="/javascript">Java Script</Link>
+      <Link to="/angular">Angular</Link>
       <Link to="/react">React</Link>
-      <Link to="/react">React Native</Link>
-      <Link to="/react">Java</Link>
-      <Link to="/react">Spring boot</Link>
-      <Link to="/react">Java full stack</Link>
+      <Link to="/reactnative">React Native</Link>
+      <Link to="/java">Java</Link>
+      <Link to="/springboot">Spring boot</Link>
+      <Link to="/java-fullstack">Java full stack</Link>
+      <Link to="/contacts">Contact</Link>
 
       <Link to="quote">
         <span className={styles.link}>Trainee</span>

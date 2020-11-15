@@ -6,6 +6,7 @@ import Card from "./ui-kit/card";
 import styles from "./design.module.css";
 import Footer from "./functional/footer";
 import Header from "./functional/header";
+import Contacts from "./functional/Contact";
 import Form from "./form";
 import BookForm from "./bookForm";
 import User from "./screens/user";
@@ -129,6 +130,9 @@ class App extends Component {
           </Route>
           <Route path="/quote">
             <QuotationForm />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
           </Route>
         </Switch>
       </Router>
